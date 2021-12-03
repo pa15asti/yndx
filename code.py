@@ -6,7 +6,7 @@ from PyQt5 import uic
 import random as r
 
 
-class Example(QWidget):
+class Example(MainWindow):
     def __init__(self):
         super(Example, self).__init__()
         uic.loadUi('ui.ui', self)
