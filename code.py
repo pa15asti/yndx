@@ -10,7 +10,7 @@ class Example(QWidget):
     def __init__(self):
         super(Example, self).__init__()
         uic.loadUi('ui.ui', self)
-        self.btn.clicked.connect(self.onClicked)
+        self.pushButton.clicked.connect(self.onClicked)
         self.flag = False
 
     def onClicked(self):
