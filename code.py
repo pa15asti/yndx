@@ -7,7 +7,7 @@ import random as r
 import QMainWindow
 
 
-class Example(MainWindow):
+class Example(centralwidget):
     def __init__(self):
         super(Example, self).__init__()
         uic.loadUi('ui.ui', self)
