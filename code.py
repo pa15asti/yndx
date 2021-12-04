@@ -3,11 +3,12 @@ from PyQt5.QtGui import QPainter, QColor, QBrush, QPen
 import sys
 from PyQt5.QtCore import Qt
 from PyQt5 import uic
+from PyQt5.Qt import QMainWindow
 import random as r
 import QMainWindow
 
 
-class Example(centralwidget):
+class Example(QMainWindow):
     def __init__(self):
         super(Example, self).__init__()
         uic.loadUi('ui.ui', self)
