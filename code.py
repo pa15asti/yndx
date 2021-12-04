@@ -29,9 +29,19 @@ class Example(QMainWindow):
 
     def drawRectangles(self, qp):
         a = r.randint(10, 100)
-        qp.setPen(QPen(Qt.yellow, 8, Qt.SolidLine))
-        qp.setBrush(QBrush(Qt.yellow, Qt.SolidPattern))
-        qp.drawEllipse(r.randint(10, 400), r.randint(10, 400), a, a)
+        rndm = r.choice((1, 2, 3))
+        if rndm == 1:
+            qp.setPen(QPen(Qt.yellow, 8, Qt.SolidLine))
+            qp.setBrush(QBrush(Qt.yellow, Qt.SolidPattern))
+            qp.drawEllipse(r.randint(10, 400), r.randint(10, 400), a, a)
+        elif rndm == 2:
+            qp.setPen(QPen(Qt.red, 8, Qt.SolidLine))
+            qp.setBrush(QBrush(Qt.red, Qt.SolidPattern))
+            qp.drawEllipse(r.randint(10, 400), r.randint(10, 400), a, a)
+        else:
+            qp.setPen(QPen(Qt.blue, 8, Qt.SolidLine))
+            qp.setBrush(QBrush(Qt.blue, Qt.SolidPattern))
+            qp.drawEllipse(r.randint(10, 400), r.randint(10, 400), a, a)
 
 
 if __name__ == '__main__':
